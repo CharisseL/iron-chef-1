@@ -1,16 +1,16 @@
-@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Arimo);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 
-(http://fonts.googleapis.com/css?family=Open+Sans);
 
 *{
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-size: 13px;
-  margin: 0px;
-  padding: 0px;
+  margin: 5px;
+  padding: 1px;
 }
 
 body{
-  background-color: #AAAAAA;
+  background-color: #637c96;
 }
 
 header{
@@ -18,16 +18,21 @@ header{
 }
 
 header h1{
-  font-size: 25px;
+  font-family: 'Lobster', cursive;
+  font-size: 55px;
+  color: #e1e001;
 }
+
+
 
 .recipe{
   display: inline-block;
+  vertical-align: top;
   width: 250px;
   border: 1px solid #111111;
   border-radius: 5px;
   margin: 20px;
-  background-color: #DDDDDD;
+  background-color: #ccdde1;
 }
 
 .recipe .photo{
@@ -35,6 +40,12 @@ header h1{
   background-size: cover;
   border-bottom: 1px solid #111111;
   margin-bottom: 10px;
+}
+
+.recipe .photo button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .recipe .name{
@@ -52,3 +63,8 @@ header h1{
   left: 20px;
 }
 
+
+form input, form button, form textarea{
+  width: 300px;
+  display: block;
+}

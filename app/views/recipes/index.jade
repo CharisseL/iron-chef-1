@@ -2,14 +2,14 @@ extends ../shared/template
 block content
   #controls
     #visibility
-      button#hide Hide Form
-      button#show Show Form
+      button.myButton#hide Hide Form
+      button.myButton#show Show Form
     form(method='post', action='/recipes')
       input(name='name', type='text', placeholder='chicken', autofocus=true)
       input(name='photo', type='text', placeholder='image URL')
       input(name='ingredients', type='text', placeholder='chicken, water, eggs')
       textarea(name='directions')
-      button Add Recipe!
+      button.myAddButton Add Recipe!
   
   #recipes
     each recipe in recipes
