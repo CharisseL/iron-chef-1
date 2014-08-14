@@ -5,12 +5,24 @@ block content
       button.myButton#hide Hide Form
       button.myButton#show Show Form
     form(method='post', action='/recipes')
+      select(name='category')
+        Option Breakfast
+        Option Lunch 
+        Option Dinner
+        Option Late Night
+        Option Snacks
       input(name='name', type='text', placeholder='chicken', autofocus=true)
       input(name='photo', type='text', placeholder='image URL')
       input(name='ingredients', type='text', placeholder='chicken, water, eggs')
       textarea(name='directions')
       button.myAddButton Add Recipe!
-  
+ul#categories
+  li: a(href='#') Breakfast
+  li: a(href='#') Lunch 
+  li: a(href='#') Dinner 
+  li: a(href='#') Late Night 
+  li: a(href='#') Snacks 
+
   #recipes
     each recipe in recipes
       include recipe
